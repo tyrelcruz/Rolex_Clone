@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Page</title>
+    <link rel="stylesheet" href="./styles/shop.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Header -->
+<header id="header">
+    <!-- Slide Menu Button -->
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <a href="home.html">
+        <img src="images/logo.jpg" alt="Rolex Logo" class="header-logo">
+    </a>
+
+    <!-- Cart Button -->
+    <div class="cart-container">
+        <a href="cart.html" class="cart-icon">
+            <img src="images/cart.png" alt="Cart" class="cart-image">
+            <span id="cart-count" class="cart-count">0</span>
+        </a>
+    </div>
+</header>
+
+    <!-- Slide-Out Menu -->
+    <div class="side-menu" id="side-menu">
+        <button class="close-btn" onclick="toggleMenu()">&#10005;</button>
+        <nav>
+            <a href="home.html">
+                <button>HOME</button>
+            </a>
+            <a href="#" id="shop-link">
+                <button>SHOP</button>
+            </a>
+        </nav>
+    </div> 
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Slideshow -->
+<section class="slideshow">
+    <div class="slides">
+        <img src="images/slideshow1.jpg" alt="slide 1">
+        <img src="images/slideshow2.webp" alt="slide 2">
+        <img src="images/slideshow3.jpg" alt="slide 3">
+        <img src="images/slideshow4.jpg" alt="slide 4">
+        <img src="images/slideshow5.png" alt="slide 5">
+        <img src="images/slideshow6.jpg" alt="slide 6">
+    </div>
+</section>
+
+        <!-- Shop Header -->
+        <section class="shop-header">
+            <h1>Shop Watches</h1>
+                    <!-- New -->
+            <p id="results-count">Showing results: <span id="product-count">0</span></p>
+            <div class="sorting">
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="all">All</option>
+                    <option value="mens">Men's Watches</option>
+                    <option value="womens">Women's Watches</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="shop-grid" id="product-grid">
+            <!-- Men's Watches -->
+            <div class="product" data-gender="mens" data-id="1">
+                <img src="images/MensWatch1.avif" alt="Men's Watch">
+                <h3>Rolex Day-Date 36 Gold</h3>
+                <p>Php 13,935,501.00</p>
+                <button class="add-to-cart" onclick="addToCart('Rolex Day-Date 36 Gold', 'images/MensWatch1.avif', 13935501)">Add to Cart</button>
+            </div>
+            <div class="product" data-gender="mens" data-id="2">
+                <img src="images/MensWatch2.avif" alt="Men's Watch">
+                <h3>Rolex Day-Date 36 Platinum</h3>
+                <p>Php 3,265,760.00</p>
+                <button class="add-to-cart" onclick="addToCart('Rolex Day-Date 36 Platinum', 'images/MensWatch2.avif', 3265760)">Add to Cart</button>
+            </div>
+            <div class="product" data-gender="mens" data-id="3">
+                <img src="images/MensWatch3.avif" alt="Men's Watch">
+                <h3>Rolex Submariner 41 Steel</h3>
+                <p>Php 1,861,744.00</p>
+                <button class="add-to-cart" onclick="addToCart('Rolex Submariner 41 Steel', 'images/MensWatch3.avif', 1861744)">Add to Cart</button>
+            </div>
+            <div class="product" data-gender="mens" data-id="4">
+                <img src="images/MensWatch4.avif" alt="Men's Watch">
+                <h3>Rolex Sea-Dweller 43 Two-Tone</h3>
+                <p>Php 1,066,808.00</p>
+                <button class="add-to-cart" onclick="addToCart('Rolex Sea-Dweller 43 Two-Tone', 'images/MensWatch4.avif', 1066808)">Add to Cart</button>
+            </div>
+            <div class="product" data-gender="mens" data-id="5">
+                <img src="images/MensWatch5.avif" alt="Men's Watch">
+                <h3>Rolex Day-Date 36 Mother-of-Pearl</h3>
+                <p>Php 3,852,208.00</p>
+                <button class="add-to-cart" onclick="addToCart('Rolex Day-Date 36 Mother-of-Pearl', 'images/MensWatch5.avif', 3852208)">Add to Cart</button>
+            </div>
+            <div class="product" data-gender="mens" data-id="6">
+                <img src="images/MensWatch6.webp" alt="Men's Watch">
+                <h3>Rolex GMT-Master II 40 Everose Rolesor</h3>
+                <p>Php 1,150,000.00</p>
+                <button class="add-to-cart" onclick="addToCart('Rolex GMT-Master II 40 Everose Rolesor', 'images/MensWatch6.webp', 1150000)">Add to Cart</button>
+            </div>
+            <div class="product" data-gender="mens" data-id="6">
+                <img src="images/MensWatch7.avif" alt="Men's Watch">
+                <h3>Rolex Day-Date 40 Everose Gold</h3>
+                <p>Php 2,363,500.00</p>
+                <button class="add-to-cart" onclick="addToCart('Rolex Day-Date 40 Everose Gold', 'images/MensWatch7.avif', 2363500)">Add to Cart</button>
+            </div>
+            <div class="product" data-gender="mens" data-id="8">
+                <img src="images/MensWatch8.avif" alt="Men's Watch">
+                <h3>Rolex Sky-Dweller 42 Rose Gold</h3>
+                <p>Php 2,954,000.00</p>
+                <button class="add-to-cart" onclick="addToCart('Rolex Sky-Dweller 42 Rose Gold', 'images/MensWatch8.avif', 2954000)">Add to Cart</button>
+            </div>
+            <div class="product" data-gender="mens" data-id="9">
+                <img src="images/MensWatch9.avif" alt="Men's Watch">
+                <h3>Rolex Sky-Dweller 42 Champagne Two-Tone</h3>
+                <p>Php 1,274,286.00</p>
+                <button class="add-to-cart" onclick="addToCart('Rolex Sky-Dweller 42 Champagne Two-Toned', 'images/MensWatch9.avif', 127428600)">Add to Cart</button>
+            </div>
+            <div class="product" data-gender="mens" data-id="10">
+                <img src="images/MensWatch10.webp" alt="Men's Watch">
+                <h3>Rolex Datejust 36 Two-Tone</h3>
+                <p>Php 767,302.00</p>
+                <button class="add-to-cart" onclick="addToCart('Rolex Datejust 36 Two-Tone', 'iimages/MensWatch10.webp', 76730200)">Add to Cart</button>
+            </div>
+
+            <!-- Women's Watches -->
+            <div class="product" data-gender="womens">
+                <img src="images/WomensWatch1.webp" alt="Women's Watch">
+                <h3>Rolex Day-Date 36 Everose and Diamonds</h3>
+                <p>Php 4,771,500.00</p>
+                <button class="add-to-cart" onclick="addToCart('Rolex Day-Date 36 Everose and Diamonds', 'images/WomensWatch1.webp', 4771500)">Add to Cart</button>
+            </div>
+            <div class="product" data-gender="womens">
+                <img src="images/WomensWatch2.avif" alt="Women's Watch">
+                <h3>Rolex Lady Datejust 28 Everose and Diamonds</h3>
+                <p>Php 2,380,000.00</p>
+                <button class="add-to-cart" onclick="addToCart('Rolex Lady Datejust 28 Everose and Diamonds', 'images/WomensWatch2.avif', 2380000)">Add to Cart</button>
+            </div>
+            <div class="product" data-gender="womens">
+                <img src="images/WomensWatch3.webp" alt="Women's Watch">
+                <h3>Rolex Daydate 36 Everose Gold</h3>
+                <p>Php 1,780,000.00</p>
+                <button class="add-to-cart" onclick="addToCart('Rolex Daydate 36 Everose Gold', 'images/WomensWatch3.webp', 1780000)">Add to Cart</button>
+            </div>
+            <div class="product" data-gender="womens">
+                <img src="images/WomensWatch4.avif" alt="Women's Watch">
+                <h3>Rolex Day-Date 36 Rose Gold and Diamonds</h3>
+                <p>Php 3,973,103.00</p>
+                <button class="add-to-cart" onclick="addToCart('Rolex Day-Date 36 Rose Gold and Diamonds', 'images/WomensWatch4.avif', 3973103)">Add to Cart</button>
+            </div>
+            <div class="product" data-gender="womens">
+                <img src="images/WomensWatch5.avif" alt="Women's Watch">
+                <h3>Rolex Day-Date 40 Gold and Diamonds</h3>
+                <p>Php 3,273,500.00</p>
+                <button class="add-to-cart" onclick="addToCart('Rolex Day-Date 40 Gold and Diamonds', 'images/WomensWatch5.avif', 3273500)">Add to Cart</button>
+            </div>
+            <div class="product" data-gender="womens">
+                <img src="images/WomensWatch6.avif" alt="Women's Watch">
+                <h3>Rolex Lady Datejust 36 Platinum and Diamonds</h3>
+                <p>Php 2,865,615.00</p>
+                <button class="add-to-cart" onclick="addToCart('Rolex Lady Datejust 36 Platinum and Diamonds', 'images/WomensWatch6.avif', 2865615)">Add to Cart</button>
+            </div>
+            <div class="product" data-gender="womens">
+                <img src="images/WomensWatch7.avif" alt="Women's Watch">
+                <h3>Rolex Day-Date 36 White Gold</h3>
+                <p>Php 4,533,905.00</p>
+                <button class="add-to-cart" onclick="addToCart('Rolex Day-Date 36 White Gold', 'images/WomensWatch7.avif', 4533905)">Add to Cart</button>
+            </div>
+            <div class="product" data-gender="womens">
+                <img src="images/WomensWatch8.avif" alt="Women's Watch">
+                <h3>Rolex Day-Date 36 Gold and Diamonds</h3>
+                <p>Php 6,393,970.00</p>
+                <button class="add-to-cart" onclick="addToCart('Rolex Day-Date 36 Gold and Diamonds', 'images/WomensWatch8.avif', 6393970)">Add to Cart</button>
+            </div>
+            <div class="product" data-gender="womens">
+                <img src="images/WomensWatch9.avif" alt="Women's Watch">
+                <h3>Rolex Day-Date 36 Rainbow Sapphire </h3>
+                <p>Php 4,883,000.00</p>
+                <button class="add-to-cart" onclick="addToCart('Rolex Day-Date 36 Rainbow Sapphire', 'images/WomensWatch9.avif', 4883000)">Add to Cart</button>
+            </div>
+            <div class="product" data-gender="womens">
+                <img src="images/WomensWatch10.avif" alt="Women's Watch">
+                <h3>Rolex Datejust 36 Steel</h3>
+                <p>Php 680,392.00</p>
+                <button class="add-to-cart" onclick="addToCart('Rolex Datejust 36 Steel', 'images/WomensWatch10.avif', 680392)">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+ <!-- Footer -->
+ <footer>
+    <div class="footer-top">
+        <div class="branding">
+            <img src="images/crown.png" alt="logo">
+        </div>
+    </div>
+    <div class="footer-middle">
+        <div class="footer-column">
+            <h4>Watches</h4>
+            <ul>
+                <li><a href="#all-watches">All Watches</a></li>
+                <li><a href="#collections">Our Collections</a></li>
+                <li><a href="#new-releases">New Releases</a></li>
+                <li><a href="#boutique">Find a Boutique</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Our World</h4>
+            <ul>
+                <li><a href="#born">Born in Le Brassus</a></li>
+                <li><a href="#atelier">Musée Atelier</a></li>
+                <li><a href="#chronicles">Rolex Legacy</a></li>
+                <li><a href="#stay-connected">Stay Connected</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="#maintenance">Maintenance Services</a></li>
+                <li><a href="#warranty">Extend Your Warranty</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#press">Press</a></li>
+                <li><a href="#foundation">Foundation</a></li>
+                <li><a href="#commitments">Commitments</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-info">
+            <div class="footer-social">
+                <a href="#instagram">Instagram</a>
+                <a href="#youtube">YouTube</a>
+                <a href="#linkedin">LinkedIn</a>
+                <a href="#tiktok">TikTok</a>
+            </div>
+            <div class="footer-legal">
+                <a href="#terms">Terms of Use</a> |
+                <a href="#privacy">Privacy Notice</a> |
+                <a href="#cookies">Cookie Policy</a> |
+                <a href="#accessibility">Accessibility</a>
+            </div>
+            <p>© 2024 Rolex</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="./scripts/shop.js"></script>
+    <script src="scripts/auth.js"></script>
+</body>
+</html>

@@ -1,8 +1,5 @@
 import { renderAuthButton } from "./utils/utils.js";
 
-//Missing anti clickjacking
-app.use(helmet.frameguard({action: 'deny'}));
-
 async function fetchWatches() {
   try {
     const response = await fetch("http://localhost:3000/api/v1/watches");

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IAS Home Rolex</title>
+    <link rel="stylesheet" href="./styles/home.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      <img src="images/logo.jpg" alt="Rolex Logo" class="header-logo" />
+    </header>
+
+    <!-- Slide-Out Menu -->
+    <div class="side-menu" id="side-menu">
+      <button class="close-btn" onclick="toggleMenu()">&#10005;</button>
+      <nav>
+        <a href="home.html">
+          <button>HOME</button>
+        </a>
+        <a href="shop.html" id="shop-link">
+          <button>SHOP</button>
+        </a>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Panel 1 -->
+      <div class="panel panel-1">
+        <video autoplay muted loop>
+          <source src="videos/panel1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="intro-text">
+          <h1>A Celebration of Craftsmanship</h1>
+          <p>Discover timeless luxury and elegance</p>
+        </div>
+      </div>
+
+      <!-- Panel 2 -->
+      <div class="panel panel-2">
+        <div class="text-content">
+          <h2>Our 2024 Collection</h2>
+          <p>
+            Explore the latest designs that redefine luxury and elegance. Each
+            timepiece represents a unique story crafted with precision and care.
+          </p>
+        </div>
+        <div class="carousel-container">
+          <div class="carousel" id="carousel">
+            <img src="images/watch1.avif" alt="Watch 1" />
+            <img src="images/watch2.avif" alt="Watch 2" />
+            <img src="images/watch3.avif" alt="Watch 3" />
+            <img src="images/watch4.avif" alt="Watch 4" />
+            <img src="images/watch5.avif" alt="Watch 5" />
+            <img src="images/watch6.avif" alt="Watch 6" />
+          </div>
+          <div class="carousel-text" id="carousel-text">
+            Watch 1 Description
+          </div>
+          <button class="carousel-btn left" onclick="prevSlide()">
+            &#9664;
+          </button>
+          <button class="carousel-btn right" onclick="nextSlide()">
+            &#9654;
+          </button>
+        </div>
+      </div>
+
+      <!-- Panel 3 -->
+      <div class="panel panel-3">
+        <div class="content">
+          <h2>
+            ROLEX DAYTONA <br />
+            IN EVEROSE GOLD
+          </h2>
+          <p>
+            Crafted in 18k gold, available in yellow, white, or Everose, the
+            Rainbow Daytona’s 40mm case is both robust and elegant. The dial,
+            offered in black or diamond pavé, further enhances the watch’s
+            luxurious appeal, with crystal gold registers and hour markers made
+            from either baguette-cut sapphires or square-cut diamonds.
+          </p>
+          <a href="#" class="discover-btn">Discover more</a>
+        </div>
+        <div class="images">
+          <img src="images/daytona.jpg" alt="Watch Image 1" />
+          <img src="images/daytona3.jpg" alt="Watch Image 2" />
+        </div>
+      </div>
+
+      <!-- Panel 4 -->
+      <div class="panel panel-4">
+        <video autoplay muted loop>
+          <source src="videos/Submariner.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="text">
+          <h2>The Submariner</h2>
+          <p>
+            It was one of our very first Professional watches and has become the
+            archetype of tool watches dedicated to diving. The Oyster Perpetual
+            Submariner was, at its launch in 1953, the first divers’ wristwatch
+            to be waterproof to 100 metres (330 feet).
+          </p>
+          <a href="#" class="discover-btn">Discover The Submariner</a>
+        </div>
+      </div>
+
+      <!-- Panel 5 -->
+      <div class="panel panel-5">
+        <img src="images/DayDate.png" alt="Image" />
+        <div class="text">
+          <h2>Inspired by the Violin</h2>
+          <p>
+            Since its launch in 1956, the Day-Date is a prestigious model,
+            easily distinguishable for its display. The new 18ct yellow gold
+            watch adorns a finely crafted dial, dressed in tones of green and
+            featuring a violin and its volute.
+          </p>
+          <a href="#" class="discover-btn">Discover more</a>
+        </div>
+      </div>
+
+      <!-- Panel 6 -->
+      <div class="panel panel-6">
+        <img src="images/wirst.jpg" alt="Image" />
+        <div class="text">
+          <h2>Timeless Elegance for All</h2>
+          <p>
+            Explore a wide variety of watches for both men and women, blending
+            timeless elegance with exceptional craftsmanship.
+          </p>
+          <a href="#" class="discover-btn">Explore Now</a>
+        </div>
+      </div>
+
+      <!-- Panel 7 -->
+      <div class="panel panel-7">
+        <div class="text">
+          <h2>Rolex: A Legacy of Excellence</h2>
+          <p>
+            Delve into the rich history behind Rolex, a symbol of luxury,
+            precision, and innovation, renowned worldwide for crafting iconic
+            timepieces that have stood the test of time.
+          </p>
+        </div>
+        <img src="images/history.webp" alt="Image" />
+      </div>
+
+      <!-- Panel 8 - Find a Boutique -->
+      <div class="panel panel-8">
+        <div class="map-container">
+          <div class="image-wrapper">
+            <img
+              src="images/store.avif"
+              alt="Boutique Image"
+              class="hover-image"
+            />
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15705.824388076402!2d121.0163228984188!3d14.57047865694771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c854f8ff352b%3A0xa8de6a8f2286fa70!2sRolex!5e0!3m2!1sen!2sph!4v1733137100368!5m2!1sen!2sph"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="text">
+          <h2>Find a Boutique</h2>
+          <p>
+            Locate the nearest Rolex boutique to explore our collection of
+            timepieces and enjoy personalized service.
+          </p>
+          <p>
+            Address: Rolex Boutique, Power Plant Mall<br />Opening Hours:
+            Mon-Sat, 10 AM - 7 PM
+          </p>
+          <a
+            href="https://www.google.com/maps/search/Rolex+Stores+Near+Me"
+            target="_blank"
+            class="discover-btn"
+            >Get Directions</a
+          >
+        </div>
+      </div>
+
+      <!-- Subscribe Section -->
+      <div class="panel-9">
+        <div class="section left">
+          <h2>Join Our Newsletter</h2>
+        </div>
+        <div class="section middle">
+          <p>
+            Stay updated with the latest news, releases, and offers directly in
+            your inbox.
+          </p>
+        </div>
+        <div class="section right">
+          <!-- Subscribe Button -->
+          <button class="subscribe-btn" id="subscribe-btn">Subscribe</button>
+        </div>
+      </div>
+
+      <!-- Modal for email input -->
+      <div id="subscribeModal" class="subscribe-modal">
+        <div class="modal-content">
+          <span class="close-btn" id="close-btn">&times;</span>
+          <h2>Get the Latest news</h2>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            class="email-input"
+            required
+          />
+          <button id="submit-btn" class="submit-btn">Submit</button>
+          <p id="modal-message"></p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-top">
+        <div class="branding">
+          <img src="images/crown.png" alt="logo" />
+        </div>
+      </div>
+      <div class="footer-middle">
+        <div class="footer-column">
+          <h4>Watches</h4>
+          <ul>
+            <li><a href="#all-watches">All Watches</a></li>
+            <li><a href="#collections">Our Collections</a></li>
+            <li><a href="#new-releases">New Releases</a></li>
+            <li><a href="#boutique">Find a Boutique</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Our World</h4>
+          <ul>
+            <li><a href="#born">Born in Le Brassus</a></li>
+            <li><a href="#atelier">Musée Atelier</a></li>
+            <li><a href="#chronicles">Rolex Legacy</a></li>
+            <li><a href="#stay-connected">Stay Connected</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#maintenance">Maintenance Services</a></li>
+            <li><a href="#warranty">Extend Your Warranty</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#foundation">Foundation</a></li>
+            <li><a href="#commitments">Commitments</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-info">
+          <div class="footer-social">
+            <a href="#instagram">Instagram</a>
+            <a href="#youtube">YouTube</a>
+            <a href="#linkedin">LinkedIn</a>
+            <a href="#tiktok">TikTok</a>
+          </div>
+          <div class="footer-legal">
+            <a href="#terms">Terms of Use</a> |
+            <a href="#privacy">Privacy Notice</a> |
+            <a href="#cookies">Cookie Policy</a> |
+            <a href="#accessibility">Accessibility</a>
+          </div>
+          <p>© 2024 Rolex</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/home.js"></script>
+  </body>
+</html>

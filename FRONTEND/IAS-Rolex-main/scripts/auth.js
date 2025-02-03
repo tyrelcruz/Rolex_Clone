@@ -1,7 +1,3 @@
-
-//Missing anti clickjacking
-app.use(helmet.frameguard({action: 'deny'}));
-
 async function isLoggedIn() {
   try {
     const response = await fetch("/api/auth/check", {

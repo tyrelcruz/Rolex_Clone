@@ -1,11 +1,8 @@
 import { renderAuthButton } from "./utils/utils.js";
 renderAuthButton();
-
-//Missing anti clickjacking
-app.use(helmet.frameguard({action: 'deny'}));
-
 async function fetchCart() {
   const token = localStorage.getItem("token");
+
   const shopLink = document.getElementById("shop-link");
 
   if (!token) {

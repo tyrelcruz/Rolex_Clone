@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Page</title>
+    <link rel="stylesheet" href="./styles/shop.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <!-- Slide Menu Button -->
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      <a href="home.html">
+        <img src="images/logo.jpg" alt="Rolex Logo" class="header-logo" />
+      </a>
+
+      <!-- Cart Button -->
+      <div class="cart-container">
+        <a href="cart.html" class="cart-icon">
+          <img src="images/cart.png" alt="Cart" class="cart-image" />
+          <span id="cart-count" class="cart-count">0</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Slide-Out Menu -->
+    <div class="side-menu" id="side-menu">
+      <button class="close-btn" onclick="toggleMenu()">&#10005;</button>
+      <nav>
+        <a href="home.html">
+          <button>HOME</button>
+        </a>
+        <a href="#" id="shop-link">
+          <button>SHOP</button>
+        </a>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Slideshow -->
+      <section class="slideshow">
+        <div class="slides">
+          <img src="images/slideshow1.jpg" alt="slide 1" />
+          <img src="images/slideshow2.webp" alt="slide 2" />
+          <img src="images/slideshow3.jpg" alt="slide 3" />
+          <img src="images/slideshow4.jpg" alt="slide 4" />
+          <img src="images/slideshow5.png" alt="slide 5" />
+          <img src="images/slideshow6.jpg" alt="slide 6" />
+        </div>
+      </section>
+
+      <!-- Shop Header -->
+      <section class="shop-header">
+        <h1>Shop Watches</h1>
+        <!-- New -->
+        <p id="results-count">
+          Showing results: <span id="product-count">0</span>
+        </p>
+        <div class="sorting">
+          <label for="sort">Sort by:</label>
+          <select id="sort">
+            <option value="all">All</option>
+            <option value="mens">Men's Watches</option>
+            <option value="womens">Women's Watches</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Product Grid -->
+      <section class="shop-grid" id="product-grid"></section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-top">
+        <div class="branding">
+          <img src="images/crown.png" alt="logo" />
+        </div>
+      </div>
+      <div class="footer-middle">
+        <div class="footer-column">
+          <h4>Watches</h4>
+          <ul>
+            <li><a href="#all-watches">All Watches</a></li>
+            <li><a href="#collections">Our Collections</a></li>
+            <li><a href="#new-releases">New Releases</a></li>
+            <li><a href="#boutique">Find a Boutique</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Our World</h4>
+          <ul>
+            <li><a href="#born">Born in Le Brassus</a></li>
+            <li><a href="#atelier">Musée Atelier</a></li>
+            <li><a href="#chronicles">Rolex Legacy</a></li>
+            <li><a href="#stay-connected">Stay Connected</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#maintenance">Maintenance Services</a></li>
+            <li><a href="#warranty">Extend Your Warranty</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#foundation">Foundation</a></li>
+            <li><a href="#commitments">Commitments</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-info">
+          <div class="footer-social">
+            <a href="#instagram">Instagram</a>
+            <a href="#youtube">YouTube</a>
+            <a href="#linkedin">LinkedIn</a>
+            <a href="#tiktok">TikTok</a>
+          </div>
+          <div class="footer-legal">
+            <a href="#terms">Terms of Use</a> |
+            <a href="#privacy">Privacy Notice</a> |
+            <a href="#cookies">Cookie Policy</a> |
+            <a href="#accessibility">Accessibility</a>
+          </div>
+          <p>© 2024 Rolex</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./scripts/shop.js"></script>
+  </body>
+</html>

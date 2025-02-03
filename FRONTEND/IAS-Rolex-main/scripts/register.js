@@ -1,9 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const registerForm = document.getElementById("register-form");
 
-//Missing anti clickjacking
-app.use(helmet.frameguard({action: 'deny'}));
-
   registerForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 

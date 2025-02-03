@@ -1,8 +1,5 @@
 import { renderAuthButton } from "./utils/utils.js";
 
-//Missing anti clickjacking
-app.use(helmet.frameguard({action: 'deny'}));
-
 document.addEventListener("DOMContentLoaded", () => {
   const token = localStorage.getItem("token");
 
