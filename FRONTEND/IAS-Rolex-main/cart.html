@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./styles/cart.css" />
+  </head>
+  <body>
+    <header id="header">
+      <button class="menu-btn" onclick="">☰</button>
+      <img src="images/logo.jpg" alt="Rolex Logo" class="header-logo" />
+    </header>
+
+    <div class="side-menu" id="side-menu">
+      <button class="close-btn" onclick="">&#10005;</button>
+      <nav>
+        <div>
+          <a href="home.html">
+            <button>HOME</button>
+          </a>
+          <a href="shop.html" id="shop-link">
+            <button>SHOP</button>
+          </a>
+        </div>
+
+        <button id="auth-button">Sign in</button>
+      </nav>
+    </div>
+
+    <main>
+      <div class="checkout-container">
+        <section class="cart-section">
+          <h1>Your Cart</h1>
+
+          <div class="cart-items" id="cart-items"></div>
+
+          <div class="total-price">
+            <p>Total: <span id="total-price">0</span></p>
+          </div>
+        </section>
+
+        <aside class="order-summary">
+          <h2>Order Summary</h2>
+          <div class="summary-details">
+            <p>Total Items: <span id="total-items">0</span></p>
+            <p>Total Price: <span id="summary-total-price">0</span></p>
+          </div>
+
+          <div class="payment-method">
+            <h3>Select Payment Method</h3>
+            <label>
+              <input
+                type="radio"
+                name="payment-method"
+                value="Credit Card"
+                checked
+              />
+              Credit Card
+            </label>
+            <label>
+              <input type="radio" name="payment-method" value="PayPal" /> PayPal
+            </label>
+            <label>
+              <input type="radio" name="payment-method" value="Bank Transfer" />
+              Bank Transfer
+            </label>
+          </div>
+
+          <button id="place-order-btn" class="place-order-btn" onclick="">
+            Place Order
+          </button>
+        </aside>
+      </div>
+    </main>
+
+    <div id="shipping-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="">&times;</span>
+        <h2>Shipping Information</h2>
+        <form
+          id="shipping-form"
+          onsubmit="event.preventDefault(); submitShippingForm();"
+        >
+          <label for="shipping-name">Full Name</label>
+          <input
+            type="text"
+            id="shipping-name"
+            placeholder="Enter your name"
+            required
+          />
+
+          <label for="shipping-address">Address</label>
+          <input
+            type="text"
+            id="shipping-address"
+            placeholder="Enter your address"
+            required
+          />
+
+          <label for="shipping-phone">Phone Number</label>
+          <input
+            type="text"
+            id="shipping-phone"
+            placeholder="Enter your phone number"
+            required
+          />
+
+          <label for="shipping-email">Email Address</label>
+          <input
+            type="email"
+            id="shipping-email"
+            placeholder="Enter your email address"
+            required
+          />
+
+          <button type="submit" class="checkout-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-top">
+        <div class="branding">
+          <img src="images/crown.png" alt="logo" />
+        </div>
+      </div>
+      <div class="footer-middle">
+        <div class="footer-column">
+          <h4>Watches</h4>
+          <ul>
+            <li><a href="#all-watches">All Watches</a></li>
+            <li><a href="#collections">Our Collections</a></li>
+            <li><a href="#new-releases">New Releases</a></li>
+            <li><a href="#boutique">Find a Boutique</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Our World</h4>
+          <ul>
+            <li><a href="#born">Born in Le Brassus</a></li>
+            <li><a href="#atelier">Musée Atelier</a></li>
+            <li><a href="#chronicles">Rolex Legacy</a></li>
+            <li><a href="#stay-connected">Stay Connected</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#maintenance">Maintenance Services</a></li>
+            <li><a href="#warranty">Extend Your Warranty</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#foundation">Foundation</a></li>
+            <li><a href="#commitments">Commitments</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-info">
+          <div class="footer-social">
+            <a href="#instagram">Instagram</a>
+            <a href="#youtube">YouTube</a>
+            <a href="#linkedin">LinkedIn</a>
+            <a href="#tiktok">TikTok</a>
+          </div>
+          <div class="footer-legal">
+            <a href="#terms">Terms of Use</a> |
+            <a href="#privacy">Privacy Notice</a> |
+            <a href="#cookies">Cookie Policy</a> |
+            <a href="#accessibility">Accessibility</a>
+          </div>
+          <p>© 2024 Rolex</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./scripts/cart.js" type="module"></script>
+  </body>
+</html>

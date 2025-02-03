@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #004417;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.register-wrapper {
+    position: relative;
+    text-align: center;
+}
+
+.logo-holder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rolex-text {
+    font-size: 30px;
+    color: white;
+    font-family: 'EB Garamond', serif;
+    opacity: 1;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    opacity: 1;
+}
+
+.logo2 {
+    width: 70px;
+    height: auto;
+    opacity: 1;
+}
+
+.register-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #004417;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f5be27;
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    color: #004417;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .logo-holder {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+    }
+
+    .rolex-text {
+        font-size: 24px;
+    }
+
+    .register-container {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-holder {
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+    }
+
+    .rolex-text {
+        font-size: 20px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .register-container {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
